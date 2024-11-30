@@ -5,7 +5,7 @@ import { Login } from './pages/Login';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navigation } from './componets/Navigation';
 import { Footer } from './componets/Footer';
-// import { Dashboard } from './pages/DashBoard';
+import { Dashboard } from './pages/Dashboard';
 // import { AdminDashboard } from './pages/AdminDashBoard';
 // import { ProtectedRoute } from './componets/ProtectedRoute';
 const App: React.FC = () => {
@@ -17,22 +17,7 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
-              {/* <Route
-              path="/dashboard"
-              element={
-                <ProtectedRoute>
-                  <Dashboard />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/admin"
-              element={
-                <ProtectedRoute requiredRole="admin">
-                  <AdminDashboard />
-                </ProtectedRoute>
-              }
-            /> */}
+              <Route  path="/dashboard" element={<Dashboard/>}/>
             </Routes>
           </main>
           <Footer />
