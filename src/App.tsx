@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navigation } from './componets/Navigation';
 import { Footer } from './componets/Footer';
 import { Dashboard } from './pages/Dashboard';
+import { Signup } from './pages/SignUp';
 // import { AdminDashboard } from './pages/AdminDashBoard';
 // import { ProtectedRoute } from './componets/ProtectedRoute';
 const App: React.FC = () => {
@@ -18,6 +19,7 @@ const App: React.FC = () => {
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route  path="/dashboard" element={<Dashboard/>}/>
+              <Route  path="/signup" element={<Signup/>}/>
             </Routes>
           </main>
           <Footer />
